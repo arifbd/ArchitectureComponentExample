@@ -1,5 +1,6 @@
 package com.ennoblesoft.arif.architectureexample.model.room;
 
+
 import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
@@ -38,7 +39,7 @@ public abstract class NoteDatabase extends RoomDatabase {
     private static class PopulateDbAsyncTask extends AsyncTask<Void, Void, Void> {
         NoteDao noteDao;
 
-        public PopulateDbAsyncTask(NoteDatabase noteDatabase) {
+        PopulateDbAsyncTask(NoteDatabase noteDatabase) {
             this.noteDao = noteDatabase.noteDao();
         }
 

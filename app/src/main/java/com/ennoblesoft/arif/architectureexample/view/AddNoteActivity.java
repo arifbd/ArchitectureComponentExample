@@ -56,6 +56,7 @@ public class AddNoteActivity extends AppCompatActivity {
 
         if (TextUtils.isEmpty(title) || TextUtils.isEmpty(description)) {
             Toasty.error(this, "Title or Description missing").show();
+            return;
         }
 
         Intent intent = new Intent();

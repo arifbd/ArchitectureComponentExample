@@ -20,7 +20,7 @@
         </activity>
         <activity
             android:name=".view.AddNoteActivity"
-            android:parentActivityName=".view.MainActivity"></activity>
+            android:parentActivityName=".view.MainActivity" />
     </application>
 
 </manifest>
